@@ -1,0 +1,28 @@
+Name:                ansi-terminal-code
+Version:             0.1.0
+Synopsis:            Representation of ANSI escape codes
+Description:
+Homepage:
+--License:
+Author:
+Maintainer:
+Build-type:          Simple
+Cabal-version:       >=1.8
+
+Library
+    Exposed-modules: System.Console.ANSI.Code
+    Build-depends:   base >= 4 && < 5
+    hs-source-dirs:  src
+    ghc-options:     -Wall -Werror
+
+test-suite tests
+    type:           detailed-0.9
+    test-module:    Test
+    --other-modules:  System.Console.ANSI.Code
+    hs-source-dirs: test
+    build-depends:  base,
+                    Cabal >= 1.20,
+                    QuickCheck,
+                    cabal-test-quickcheck,
+                    ansi-terminal-code
+    ghc-options:    -Wall -Werror

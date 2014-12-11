@@ -1,0 +1,13 @@
+map <F8> :bn
+map <F7> :bp
+map <F5> :make
+map <F9> :wa<CR>:mak<CR><CR>
+map <F10> :wa<CR>:!cabal test<CR>
+let &makeprg='cabal install'
+execute "set path+=".getcwd()."/**"
+execute "set wildignore+=".getcwd()."/dist/**"
+NERDTree
+cope
+wincmd k
+execute "set undodir=".getcwd()."/dist/undo"
+set undofile
