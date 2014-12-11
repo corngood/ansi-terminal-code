@@ -2,10 +2,10 @@ Name:                ansi-terminal-code
 Version:             0.1.0
 Synopsis:            Representation of ANSI escape codes
 Description:
-Homepage:
---License:
-Author:
-Maintainer:
+Homepage:            https://github.com/corngood/ansi-terminal-code
+License:             BSD3
+Author:              David McFarland
+Maintainer:          David McFarland <corngood@gmail.com>
 Build-type:          Simple
 Cabal-version:       >=1.8
 
